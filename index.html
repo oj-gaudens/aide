@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Site d'Aide – Markdown PRO MAX</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+
+<body class="theme-light">
+
+<header class="top-header">
+  <h1>Site d'Aide</h1>
+  <p>Créez vos sites, emails et slides rapidement, avec live preview et export facile.</p>
+</header>
+
+<section class="intro">
+  <h2>Bienvenue sur <span>Markdown PRO MAX</span></h2>
+  <p>Écrivez votre Markdown à gauche et voyez le rendu live à droite.</p>
+
+  <label>
+    Choisir un template :
+    <select id="template-selector">
+      <option value="site">Site Web</option>
+      <option value="email">Email</option>
+      <option value="slides">Slides</option>
+    </select>
+  </label>
+</section>
+
+<section class="editor">
+  <textarea id="markdown-input">
+# Exemple Markdown
+- Liste
+- **Gras**, *italique*
+- [Liens](https://google.com)
+- Slides : séparez avec ---
+  </textarea>
+
+  <div id="preview"></div>
+</section>
+
+<div class="toolbar">
+  <button id="copy-html">Copier HTML</button>
+  <button id="copy-text">Copier texte</button>
+  <button id="download-html">Télécharger HTML</button>
+  <button id="export-pdf">Exporter PDF</button>
+  <button id="clear-all">Effacer</button>
+  <button id="fullscreen">Plein écran</button>
+
+  <select id="theme-selector">
+    <option value="theme-light">Clair</option>
+    <option value="theme-dark">Sombre</option>
+  </select>
+</div>
+
+<footer class="hint">
+  💡 Hover sur les encadrés bleus pour des aides inline selon le template.
+</footer>
+
+<script src="assets/script.js"></script>
+</body>
+</html>
